@@ -19,6 +19,11 @@ import {
 } from "@/components/ui/card";
 import { Skeleton } from "@/components/ui/skeleton";
 
+type Section = {
+  title: string;
+  content: string;
+};
+
 export default function Home() {
   const [destination, setDestination] = useState("");
   const [days, setDays] = useState("");
