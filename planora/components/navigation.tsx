@@ -33,7 +33,7 @@ export function Header() {
                     className={`font-bold text-lg tracking-wide ${scrolled ? "text-gray-900" : "text-white"
                         }`}
                 >
-                    MyLogo
+                    Planora
                 </Link>
                 {/* Links on the right */}
                 <NavigationMenu>
@@ -55,6 +55,16 @@ export function Header() {
                                     className={scrolled ? "text-gray-900" : "text-white"}
                                 >
                                     About
+                                </Link>
+                            </NavigationMenuLink>
+                        </NavigationMenuItem>
+                        <NavigationMenuItem>
+                            <NavigationMenuLink asChild>
+                                <Link
+                                    href="/generate"
+                                    className={scrolled ? "text-gray-900" : "text-white"}
+                                >
+                                    Generate
                                 </Link>
                             </NavigationMenuLink>
                         </NavigationMenuItem>
